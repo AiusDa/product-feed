@@ -1,0 +1,8 @@
+<mat-list *ngFor="let product of products" id="infinite-scroller"
+          appInfiniteScroller
+          scrollPercent="70"
+          immediateCallback="true"
+          [scrollCallback]="scrollCallback"
+          >
+  <app-product-info [product]="product"></app-product-info>
+</mat-list>
